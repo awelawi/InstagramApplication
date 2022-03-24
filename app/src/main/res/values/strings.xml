@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="lgn_btn">LOGIN</string>
+    <string name="userName">username</string>
+    <string name="userNameHint">"Enter Your Username: "</string>
+    <string name="passwordText">Password</string>
+    <string name="passWordText">"Enter Your Password Here: "</string>
+    <string name="passWordTextStr">Password</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <!-- Paste BOTH strings as required -->
+    <string name="back4app_app_id">s75FOG7rFDaySlVrYizKAaZpvvUjbwrw5YuvMwpD</string>
+    <string name="back4app_client_key">BGtYOdG8RZpVa4iE60DSHzTvxUQABYc59I8CckwQ</string>
+</resources>
