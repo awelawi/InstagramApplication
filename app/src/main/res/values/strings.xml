@@ -11,4 +11,11 @@
     <!-- Paste BOTH strings as required -->
     <string name="back4app_app_id">s75FOG7rFDaySlVrYizKAaZpvvUjbwrw5YuvMwpD</string>
     <string name="back4app_client_key">BGtYOdG8RZpVa4iE60DSHzTvxUQABYc59I8CckwQ</string>
+    <string name="toSignUp">Sign Up</string>
+    <string name="desc_of_post">Description</string>
+    <string name="postDesc">Type Caption Here</string>
+    <string name="imgbtn">Image Upload</string>
+    <string name="to_take_an_Image">Capture Image</string>
+    <string name="random" />
+    <string name="toPost">Submit Post</string>
 </resources>
