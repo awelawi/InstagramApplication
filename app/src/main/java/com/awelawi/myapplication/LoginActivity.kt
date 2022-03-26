@@ -1,5 +1,6 @@
 package com.awelawi.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -23,13 +24,20 @@ class LoginActivity : AppCompatActivity() {
         ParseUser.logInInBackground(username, password, ({ user, e ->
             if (user != null) {
                 // Hooray!  The user is logged in.
-                Log.i(TAG, "succesfully logged in user")
+                Toast.makeText(this, "succesfully logged in user", Toast.LENGTH_SHORT).show()
+                goToMainActivity()
             } else {
                 // Signup failed.  Look at the ParseException to see what happened.
-                Toast.makeText(this, "Error logging in", Toast.LENGTH_SHORT).show()
+                    e.printStackTrace()
+                    Toast.makeText(this, "Error logging in", Toast.LENGTH_SHORT).show()
             }})
         )
 
+    }
+
+    private fun goToMainActivity(){
+        val intent = Intent(this@LoginActivity, MainActivity::class.java)
+        startActivity(intent)
     }
     companion object{
         const val TAG = "LoginActivity"
