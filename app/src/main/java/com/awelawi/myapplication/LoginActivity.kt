@@ -1,12 +1,12 @@
 package com.awelawi.myapplication
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.parse.ParseUser
 
 class LoginActivity : AppCompatActivity() {
@@ -15,7 +15,8 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         //Check if user is logged in
         //If true, take them to MainActivity
-
+        val currentUser = ParseUser.getCurrentUser()
+        ParseUser.logOut()
         if(ParseUser.getCurrentUser() != null){
             goToMainActivity()
         }
@@ -39,10 +40,10 @@ class LoginActivity : AppCompatActivity() {
         user.setPassword(password)
 
         user.signUpInBackground { e ->
-            if (user != null) {
+            if (e == null) {
                 // Hooray! Let them use the app now.
                 //Navigate the user to main activity
-                Toast.makeText(this, "successfully login the user", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "successfu lly login the user", Toast.LENGTH_SHORT).show()
                 goToMainActivity()
 
                 //Make a toast to show the user signup successfully
@@ -50,7 +51,7 @@ class LoginActivity : AppCompatActivity() {
                 // Sign up didn't succeed. Look at the ParseException
                 // to figure out what went wrong
                 //Show a toast to the user to tell them failed sign up
-                e.printStackTrace()
+                    e.printStackTrace()
             }
         }
     }

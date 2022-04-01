@@ -9,8 +9,8 @@
 
     <string name="back4app_server_url">https://parseapi.back4app.com/</string>
     <!-- Paste BOTH strings as required -->
-    <string name="back4app_app_id">s75FOG7rFDaySlVrYizKAaZpvvUjbwrw5YuvMwpD</string>
-    <string name="back4app_client_key">BGtYOdG8RZpVa4iE60DSHzTvxUQABYc59I8CckwQ</string>
+    <string name="back4app_app_id">tQ6ViwUMYBJpBbgmQiJAR6AzHfclwPT9pA2tywAA</string>
+    <string name="back4app_client_key">96vnuz0A8AxUX9Q9Cl4mAtpvyoQZkyaY0TzV9rqK</string>
     <string name="toSignUp">Sign Up</string>
     <string name="desc_of_post">Description</string>
     <string name="postDesc">Type Caption Here</string>
@@ -18,4 +18,9 @@
     <string name="to_take_an_Image">Capture Image</string>
     <string name="random" />
     <string name="toPost">Submit Post</string>
+    <string name="menu_home">Home</string>
+    <string name="compose_action">Compose</string>
+    <string name="profile_action">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
