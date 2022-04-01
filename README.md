@@ -2,13 +2,9 @@
 
 **Name of your app** is a photo sharing app similar to Instagram but using Parse as its backend.
 
-# Project 3 - *Name of App Here*
-
-**Name of your app** is a photo sharing app similar to Instagram but using Parse as its backend.
-
 Time spent: **X** hours spent in total
 
-## User Stories
+## User Stories Part 2
 
 The following **required** functionality is completed:
 
@@ -45,7 +41,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ##
 Time spent: **30** hours spent in total
 
-## User Stories
+## User Stories Part 1
 
 The following **required** functionality is completed:
 
